@@ -19,3 +19,6 @@ py -3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 py -3 -m twine upload dist/*
 pip install -i https://test.pypi.org/simple/ distributionsVM
 pip install distributionsVM
+
+*Iniciar jupyter lab
+jupyter lab
