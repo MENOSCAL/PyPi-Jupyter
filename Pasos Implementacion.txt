@@ -1,0 +1,21 @@
+*Git Bash usar Python  e instalar matplotlib
+py -3 -m venv venv
+source venv/Scripts/activate
+pip install matplotlib
+
+*Python Instalar paquetes y pruebas unitarias
+pip install .
+pip install --upgrade .
+python -m unittest test
+python -i
+from distributionsVM import Gaussian
+ga_one = Gaussian(25,2)
+ga_one.mean
+
+*Python subir a PyPI repository
+py -3 -m pip install --upgrade twine
+python setup.py sdist-- 
+py -3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+py -3 -m twine upload dist/*
+pip install -i https://test.pypi.org/simple/ distributionsVM
+pip install distributionsVM
